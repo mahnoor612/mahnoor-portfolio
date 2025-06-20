@@ -3,10 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahnoor Portfolio</title>
+  <title>Mahnoor Nadeem | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      ScrollReveal().reveal('section', {
+        duration: 1000,
+        distance: '50px',
+        easing: 'ease-in-out',
+        origin: 'bottom',
+        reset: false
+      });
+    });
+  </script>
 </head>
-<body>
-  <h1>Welcome to Mahnoor's Portfolio</h1>
-  <p>This is a basic version. Your final HTML is more advanced.</p>
+<body class="bg-gradient-to-b from-pink-100 via-purple-100 to-blue-100 text-gray-800">
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 text-white">
+    <h1 class="text-5xl font-bold">Mahnoor Nadeem</h1>
+    <p class="mt-4 text-xl">Web Developer & Digital Marketer</p>
+    <div class="mt-6 space-x-4">
+      <a href="#contact" class="bg-white text-purple-700 px-6 py-2 rounded-full font-semibold hover:bg-purple-100">Hire Me</a>
+      <a href="cv.pdf" download class="border border-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-purple-700">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="max-w-4xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-purple-700">About Me</h2>
+    <p class="text-lg">Versatile professional with skills in web development, WordPress, SEO, and digital marketing. Experienced in teaching, freelancing, and eBay store management. Strong in client communication, classroom management, and delivering results across tech and education sectors.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="bg-gradient-to-r from-yellow-100 via-pink-100 to-purple-100 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-pink-600">Skills</h2>
+      <ul class="grid grid-cols-2 gap-4 text-lg">
+        <li>JavaScript, HTML5, CSS3</li>
+        <li>React.js, WordPress, Elementor</li>
+        <li>SEO (On-page), Website Speed Optimization</li>
+        <li>Google Ads, Social Media Marketing</li>
+        <li>eBay Store Management, Order Processing</li>
+        <li>Teaching, Classroom Management</li>
+        <li>Client Communication, Freelancing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="max-w-6xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-indigo-700">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-6 shadow-md transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+        <h3 class="text-xl font-semibold">Personal Portfolio Website</h3>
+        <p class="text-gray-700">A responsive personal portfolio website using HTML, Tailwind CSS, and JavaScript. Showcases resume, skills, and contact form.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-md">
+        <h3 class="text-xl font-semibold">WordPress Business Site</h3>
+        <p class="text-gray-700">Created a fully customized WordPress site for a local business using Elementor, plugins, and SEO best practices.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow-md">
+        <h3 class="text-xl font-semibold">eBay Product Management Tool</h3>
+        <p class="text-gray-700">Managed product listings, inventory, and pricing strategies on eBay using Excel, research, and visual optimization tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="bg-purple-50 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-purple-800">Experience</h2>
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-xl font-semibold">E-Rozgar GTTI – Web Developer & Digital Marketer</h3>
+          <p class="text-sm text-gray-600">April 2025 – Present</p>
+          <ul class="list-disc list-inside">
+            <li>Developed websites using React.js, HTML5, CSS3</li>
+            <li>Customized WordPress with Elementor</li>
+            <li>Ran Google Ads & managed social media campaigns</li>
+            <li>Performed SEO & speed optimization</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">Prime High School – Teacher</h3>
+          <p class="text-sm text-gray-600">Aug 2024 – Mar 2025</p>
+          <ul class="list-disc list-inside">
+            <li>Taught English, Math, and Science</li>
+            <li>Interactive lesson planning & parent communication</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">E-Zone – eBay Store Manager</h3>
+          <p class="text-sm text-gray-600">Sep 2023 – Jul 2024</p>
+          <ul class="list-disc list-inside">
+            <li>Listed and managed eBay inventory</li>
+            <li>Handled customers, orders, and returns</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">The Scholar Inn School – Teacher</h3>
+          <p class="text-sm text-gray-600">Mar 2021 – Dec 2023</p>
+          <ul class="list-disc list-inside">
+            <li>Taught core subjects & integrated tech tools</li>
+            <li>Organized school activities and events</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="bg-gradient-to-r from-green-100 via-blue-100 to-purple-100 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-green-700">Education</h2>
+      <ul class="space-y-4 text-lg">
+        <li><strong>BS IT</strong> – Ghazi University (2018–2022)</li>
+        <li><strong>Intermediate (ICs)</strong> – Government Degree College for Women (2016–2018)</li>
+        <li><strong>Matriculation</strong> – Government Girls High School (2014–2016)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-4xl mx-auto py-16 px-4">
+    <h2 class="text-3xl font-bold mb-6 text-pink-600">Contact Me</h2>
+    <p class="mb-2">📞 +92 336 3096300</p>
+    <p class="mb-2">📍 House no 35 block K Dera Ghazi Khan</p>
+    <p class="mb-2">📧 <a href="mailto:Mn835964@gmail.com" class="text-blue-600 hover:underline">Mn835964@gmail.com</a></p>
+    <div class="mt-4 space-x-4">
+      <a href="https://www.linkedin.com/in/mahnoor-nadeem-7426a8360" class="text-blue-700 hover:underline">LinkedIn</a>
+      <a href="https://github.com" class="text-gray-700 hover:underline">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="text-center text-sm text-gray-600 py-6 bg-gradient-to-r from-purple-100 to-indigo-100">
+    &copy; 2025 Mahnoor Nadeem. All rights reserved.
+  </footer>
+
 </body>
 </html>
